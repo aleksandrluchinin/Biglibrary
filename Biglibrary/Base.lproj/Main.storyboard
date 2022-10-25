@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meet View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="meetViewController" customModule="Biglibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du3-EU-U8S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="du3-EU-U8S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8E3-0X-Guj"/>
+                            <constraint firstItem="du3-EU-U8S" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="9Vq-ZU-Sw2"/>
+                            <constraint firstItem="du3-EU-U8S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cfv-Si-Q6n"/>
+                            <constraint firstItem="du3-EU-U8S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LC5-eg-0hp"/>
+                            <constraint firstItem="du3-EU-U8S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OdW-of-ui2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="du3-EU-U8S" secondAttribute="top" constant="44" id="c9r-q0-uhj"/>
+                            <constraint firstAttribute="bottom" secondItem="du3-EU-U8S" secondAttribute="bottom" id="eDu-sN-UT5"/>
+                            <constraint firstItem="du3-EU-U8S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="epz-Ck-aZP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="79.6875"/>
+        </scene>
+        <!--Library View Controller-->
+        <scene sceneID="8hT-gO-7Eb">
+            <objects>
+                <viewController id="TXd-Xn-Cho" customClass="libraryViewController" customModule="Biglibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7v-bD-z3C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLU-tt-JsQ">
+                                <rect key="frame" x="0.0" y="34" width="414" height="862"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQX-9L-2FY">
+                                <rect key="frame" x="0.0" y="830" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <items>
+                                    <barButtonItem systemItem="bookmarks" id="YuJ-S6-Nmy">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7pz-Zr-u1o"/>
+                                    <barButtonItem systemItem="rewind" id="maB-tn-8q1">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="eOl-Rp-Ato">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="enp-Av-OTa"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SiC-qN-PGn"/>
+                                    <barButtonItem systemItem="refresh" id="hu8-ya-kQc">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.0" green="0.16862745100000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5A-em-g8R">
+                                <rect key="frame" x="0.0" y="830" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <items/>
+                                <color key="tintColor" red="0.0" green="0.16862745100000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ok3-Ui-Lbj">
+                                <rect key="frame" x="0.0" y="830" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.10980392160000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="bookmarks" id="dXe-Ca-TkY">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="goHomeAction:" destination="TXd-Xn-Cho" id="AD2-DH-kU5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KX3-Nl-gQj"/>
+                                    <barButtonItem style="plain" systemItem="rewind" id="Gwv-S4-PbQ">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="goBackAtion:" destination="TXd-Xn-Cho" id="uQj-xP-dbi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="fastForward" id="Mdc-tX-7Vf">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="goForwardAction:" destination="TXd-Xn-Cho" id="lDe-GW-A9V"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0ys-b8-5br"/>
+                                    <barButtonItem style="plain" systemItem="refresh" id="USc-W3-8FU">
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="refreshAction:" destination="TXd-Xn-Cho" id="azB-xl-kOR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8IJ-Ux-GVR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aLU-tt-JsQ" secondAttribute="bottom" id="8mV-wF-Pte"/>
+                            <constraint firstItem="aLU-tt-JsQ" firstAttribute="leading" secondItem="8IJ-Ux-GVR" secondAttribute="leading" id="SMU-h1-DMT"/>
+                            <constraint firstItem="aLU-tt-JsQ" firstAttribute="top" secondItem="D7v-bD-z3C" secondAttribute="top" constant="34" id="atu-jr-sbG"/>
+                            <constraint firstItem="aLU-tt-JsQ" firstAttribute="trailing" secondItem="8IJ-Ux-GVR" secondAttribute="trailing" id="zAk-Y8-KCb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goBackItem" destination="Gwv-S4-PbQ" id="Ng5-gq-3Yg"/>
+                        <outlet property="goForwardItem" destination="Mdc-tX-7Vf" id="ArN-W0-pq0"/>
+                        <outlet property="goHomeAtem" destination="TQX-9L-2FY" id="Zm1-UI-xEb"/>
+                        <outlet property="goHomeItem" destination="dXe-Ca-TkY" id="6vT-Ck-qoT"/>
+                        <outlet property="goRefreshItem" destination="USc-W3-8FU" id="NfO-v7-rze"/>
+                        <outlet property="refreshItem" destination="USc-W3-8FU" id="3fe-tO-aGY"/>
+                        <outlet property="webView" destination="aLU-tt-JsQ" id="BGi-vZ-pTh"/>
+                        <outlet property="webWiew" destination="aLU-tt-JsQ" id="QcP-LM-p3A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNx-26-MUc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
