@@ -38,9 +38,12 @@ final class meetViewController: UIViewController {
         
         
     }
-//    Создаю 2 метода, когда кнопка нажата и когда кнопку уже нажали
+// MARK: - Action (Создаю 2 метода, когда кнопка нажата и когда кнопку уже нажали)
     @objc func buttonIsPressed(sender: UIButton) {
-        
+       
+        let storyboard = UIStoryboard(name: "libraryViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(widthIdentifire: "libraryViewController") as! libraryViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
    
     @objc func buttonIsTapped(sender: UIButton) {
